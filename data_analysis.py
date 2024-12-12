@@ -1,13 +1,3 @@
-import streamlit as st
-from json import loads
-
-def read_json_data(filename):
-    f = open(filename, "r")
-    data = loads(f.read())
-    f.close()
-    return data
-
-
 def filter_non_played(data):    
     filtered_students = 0
     filtered_data = []
